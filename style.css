@@ -1,0 +1,410 @@
+
+header{
+    height: 100%;
+    padding: 14px 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white; 
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.navbar-logo {
+    height: 50px; 
+    width: auto;
+}
+.navbar-nav .nav-item {
+    padding-right: 15px;
+}
+.nav-link {
+    color: #3A4963 !important;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+.nav-link:hover {
+    color: #1d2a4d !important;
+}
+.profile-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+}
+.profile-icons img {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.profile-icons img:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 991px) {
+    .Broker {
+        height: auto;
+        padding: 10px 12px;
+    }
+
+    .navbar-logo {
+        height: 40px;
+    }
+
+    .profile-icons img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Broker */
+.Broker-House{
+    margin-top:50px;
+}
+.Broker-House-Hunt-title{
+    font-size: 34px;
+    color:#E65252;
+    font-weight: 700;
+    padding-left:48px;
+}
+.Broker-House-Hunt-Subscription{
+    margin-top: 50px;
+}
+.Broker-House-Hunt-Subscription-header-title{
+    font-size: 22px;
+    font-weight: 600;
+    color:#E65252;
+    padding-left:15px;
+}
+.Broker-House-Hunt-Subscription{
+    width: 100% !important;
+}
+.Broker-House-Hunt-Subscription-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-inline: 30px;
+}
+@media (max-width:450px) {
+    .Broker-House-Hunt row{
+        width: 100% !important;
+    }
+    .container-fluid{
+        display: block !important;
+    }
+    .container-fluid-div{
+        display: flex !important;
+    }
+    .navbar {
+     
+     flex-wrap:nowrap !important;
+    }
+    .navbar-brand img{
+        width: 210px !important;
+    }
+    .Broker-House-Hunt-Subscription-header{
+        display: block !important;
+    }
+    .Broker-House-Hunt-Subscription-search{
+        margin-top: 20px !important;
+    }
+    .Broker-House-Hunt{
+        width: 100% !important;
+    }
+    .scroll-container {
+        display: block !important;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        padding: 10px;
+        cursor: grab;
+    }
+    .Broker-House-Hunt-Subscription-header {
+        margin-left: -7px;
+    }
+    .container {
+        width: 319px !important;
+        max-width: 1200px;
+        margin: auto;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .card-body {
+        font-size: 14px;
+        width: 100% !important;
+    }   
+    .card {
+        width: 95%;
+        min-width: 90% !important;
+        flex-shrink: 0;
+        border-radius: 10px;
+        
+        margin-bottom: 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .Broker {
+         padding:0px; 
+    }
+    .footer {
+     
+        padding: 10px !important;
+    }
+    .footer-content {
+        width: 100%;
+         display: block !important;
+    }
+    .footer-body-div {
+        width: 100%;
+         display: block !important; 
+        justify-content: space-between;
+    }
+    .footer-bottom{
+        display: block !important;
+    }
+    .broker-footer {
+        width: 100%;
+         display: block !important;
+    }
+    /* .card-body {
+        font-size: 14px;
+        width: 172px !important;
+    }
+    .card {
+        min-width: 190px !important;
+          } */
+}
+.Broker-House-Hunt-Subscription-search{
+    width: 274px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #DADADA;
+    padding:14px 45px;
+    border-radius: 24px;
+}
+.Broker-House-Hunt-Subscription-search input{
+    border:none;
+    outline: none;
+}
+.Broker-House-Hunt-Subscription-search img{
+    width: 18px ;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+.scroll-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+    cursor: grab; 
+}
+.scroll-container::-webkit-scrollbar {
+    display: none; 
+}
+.card {
+    min-width: 300px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.card-width{
+    width: 252px !important;
+    border:1px solid #DADADA;
+    padding:10px;
+    border-radius: 12px;
+    
+}
+.card-width h3{
+    color: #565353;
+}
+.card-width-body-img{
+    margin-bottom: 20px;
+}
+.card-width .card-width-body img{
+    width: 100% ;
+}
+.card-body {
+    font-size: 14px;
+    width: 308px ;
+}
+.card-body-header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.card-body-div{
+    display: flex;
+    justify-content: space-between;
+}
+.card-body-div2{
+    display: flex;
+    flex-direction: column;
+    gap:15px
+}
+.card-body-header-div1 img{
+  width: 24px;
+}
+.card-body p{
+ display: flex;
+ width: 100%;
+ justify-content: space-between;
+}
+.card-width-body{
+    width: 100% !important;
+}
+.card-width-body-location{
+    display: flex;
+     width: 153px;
+     justify-content: space-between;
+     align-items: center;
+     height: 42px;
+}
+.card-width-body-location p{
+    margin-bottom: 0px !important;
+}
+.card-width-body-location img{
+    width: 18px !important;
+    height:18px !important;
+}
+.card-body1{
+    width: 232px !important;
+}
+.card-width-body-div{
+    display: flex;
+    justify-content: space-between;
+}
+.card-width-body-div1 {
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+.card-width-body-div1 img{
+    width: 24px !important;
+    height: 24px !important;
+}
+
+/* Reports */
+.card-width-body-p{
+    color:#717171;
+}
+.card-width-body-high {
+    display: flex;
+    flex-direction: column;
+}
+.card-width-body-high-div1{
+    width: 165px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.card-width-body-high-div1 h4{
+    font-size: 14px;
+}
+.card-width-body-high-div1{
+    font-size: 12px;
+}
+.card-width-body-high-div1 h5{
+    font-size: 12px;
+    color:#75D6AB;
+}
+
+/* Broker-Desktop-Valuation */
+.Broker-Desktop-Valuation{
+    margin-top: 50px;
+}
+
+/* Footer */
+.footer {
+    background-color: #1C2536;
+    color: white;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-logo .logo-icon img{
+   
+    width: 24px;
+}
+
+.footer a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footer h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    margin-right: 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+    padding-top: 20px;
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-bottom ul {
+    padding: 0;
+  
+}
+
+.footer-bottom ul li {
+    display: inline;
+    margin-right: 15px;
+}
+/* footer */
+.footer{
+    margin-top: 50px;
+    padding: 20px;
+}
+.footer-body-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.broker-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap:20px; 
+}
+.footer-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap:20px
+}
+.footer-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+}
