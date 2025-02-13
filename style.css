@@ -1,4 +1,6 @@
-
+body::-webkit-scrollbar{
+    display: none;
+}
 header{
     height: 100%;
     padding: 14px 15px;
@@ -8,12 +10,56 @@ header{
     background-color: white; 
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
+@media (min-width: 950px) {
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar-nav {
+        display: none;
+    }
+
+    .navbar-collapse.show .navbar-nav {
+        display: block;
+    }
+
+    .profile-icons {
+        margin-left: auto;
+        display: none !important;
+    }
+    
+    .container-fluid-div{
+        display: flex;
+        width: 100% !important;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 1025px) {
+  .header{
+    width: 140% !important;
+  }
+  .navbar-logo {
+    width: 160px !important;
+  }
+
+.Broker-House {
+    flex: 10;
+    margin-top: 50px;
+    width: 60% !important;
+}
+}
 .navbar-logo {
     height: 50px; 
     width: auto;
 }
 .navbar-nav .nav-item {
     padding-right: 15px;
+}
+.navbar-toggler:focus{
+    color:white;
+    border:none !important;
 }
 .nav-link {
     color: #3A4963 !important;
@@ -27,6 +73,9 @@ header{
     display: flex;
     align-items: center;
     gap: 12px; 
+    border: 1px solid rgba(0, 0, 0, 0.365);
+    border-radius: 39px;
+    padding:7px 10px;
 }
 .profile-icons img {
     width: 22px;
@@ -34,8 +83,17 @@ header{
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
+.Property-Science-Nav-Profile-pic{
+    width: 40px !important;
+    height: 40px !important;
+}
 .profile-icons img:hover {
     transform: scale(1.1);
+}
+.container-fluid-div{
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
 }
 @media (max-width: 991px) {
     .Broker {
@@ -43,6 +101,9 @@ header{
         padding: 10px 12px;
     }
 
+    .scrollbar{
+        display:none !important;
+    }
     .navbar-logo {
         height: 40px;
     }
@@ -51,11 +112,104 @@ header{
         width: 20px;
         height: 20px;
     }
+  
+}
+
+/* Layout Styling */
+.MainContainer {
+    display: flex !important;
+    height: 100vh; /* Full height */
+}
+
+/* Sidebar with Scroll */
+/* Custom Scrollbar (Left Side) */
+.scrollbar {
+    flex: 2;
+     position: relative;
+    top: 10vh; /* Center the sidebar vertically */
+    left:5vh;
+    width: 100%; /* Width of the scrollbar container */
+    height: 50vh; /* Half the page height */
+    background-color: transparent; /* No background for the track */
+    z-index: 100; /* Ensure it's above other content */
+}
+
+
+.scrollbar-sections {
+    
+    width: 200px; /* Width of the section names container */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Equal space between sections */
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.scrollbar-sections div {
+    padding:10px;
+    font-size: 12px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    text-align: center; /* Center section names */
+}
+
+.scrollbar-sections div:hover {
+    color: red; /* Highlight section name on hover */
+}
+
+/* Scrollbar Track */
+.scrollbar-track {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px; /* Thin track */
+    height: 50vh; /* Half the page height */
+    background-color: #e0e0e0; /* Track color */
+    border-radius: 3px; /* Rounded corners */
+}
+
+/* Scrollbar Thumb */
+.scrollbar-thumb {
+    position: absolute;
+    width: 10px; /* Thicker than the track */
+    height: 50px !important; /* Initial height, will be dynamically adjusted */
+    background-color: red; /* Red scrollbar */
+    cursor: pointer;
+    transition: top 0.2s ease;
+    left: 0; /* Align with the track */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Content Sections */
+.content {
+    height: 100vh; /* Full page height */
+    overflow-y: auto; /* Enable scrolling */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    margin-top: 0;
 }
 
 /* Broker */
 .Broker-House{
+    flex:10;
     margin-top:50px;
+    width: 100% ;
+}
+.MainContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.content::-webkit-scrollbar{
+    display: none;
 }
 .Broker-House-Hunt-title{
     font-size: 34px;
@@ -71,6 +225,7 @@ header{
     font-weight: 600;
     color:#E65252;
     padding-left:15px;
+    width: 104% !important;
 }
 .Broker-House-Hunt-Subscription{
     width: 100% !important;
@@ -80,6 +235,11 @@ header{
     width: 100%;
     justify-content: space-between;
     padding-inline: 30px;
+}
+@media (max-width:769px) {
+    .footer-body-div {
+        width: 70% !important;
+    }
 }
 @media (max-width:450px) {
     .Broker-House-Hunt row{
@@ -112,7 +272,7 @@ header{
         gap: 20px;
         overflow-x: auto;
         scroll-behavior: smooth;
-        padding: 10px;
+        padding-left: 20px !important;
         cursor: grab;
     }
     .Broker-House-Hunt-Subscription-header {
@@ -124,6 +284,10 @@ header{
         margin: auto;
         padding-left: 0px !important;
         padding-right: 0px !important;
+    }
+    .card-width{
+        width: 100% !important;
+        margin-bottom: 20px;
     }
     .card-body {
         font-size: 14px;
@@ -161,6 +325,10 @@ header{
         width: 100%;
          display: block !important;
     }
+    .content {
+    padding:0px !important;
+    }
+
     /* .card-body {
         font-size: 14px;
         width: 172px !important;
@@ -207,7 +375,7 @@ header{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 .card-width{
-    width: 252px !important;
+    width: 252px ;
     border:1px solid #DADADA;
     padding:10px;
     border-radius: 12px;
@@ -242,6 +410,31 @@ header{
 }
 .card-body-header-div1 img{
   width: 24px;
+  cursor: pointer;
+}
+.card-body-header-sidediv{
+    display: none; /* Hide the dropdown menu by default */
+    position: absolute;
+    top: 25%; /* Position below the menu icon */
+    right: 0; /* Align to the right */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it appears above other content */
+}
+.card-body-header-sidediv .menu-item {
+    padding: 8px 16px; /* Add padding to menu items */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.card-body-header-sidediv .menu-item:hover {
+    background-color: #f1f1f1; /* Highlight menu items on hover */
+}
+
+/* Show the dropdown menu when it has the 'show' class */
+.card-body-header-sidediv.show {
+    display: block;
 }
 .card-body p{
  display: flex;
@@ -407,4 +600,10 @@ header{
     display: flex;
     flex-direction: column;
    
+}
+.list-unstyled li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
 }
